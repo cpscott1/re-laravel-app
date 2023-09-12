@@ -25,6 +25,16 @@
             <a href="#" class="signup-link">Signup</a>
         </div>
        </div> 
+       <div class="hero-text">
+        <div class="grid-item">
+            <h1>Find your dream</h1>
+            <p>Our catalog will surpirse you. Rather, discover an unprecendented offers of luxury properties</p>
+            <div class="btn-container">
+                 <button class="btn">Catalog</button>
+            </div>
+        </div>
+    
+       </div>
     </header>
     @yield('content')
 </body>

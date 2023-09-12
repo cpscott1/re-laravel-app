@@ -1,3 +1,60 @@
-body {
-    
+.header {
+    background: url('https://cdn.discordapp.com/attachments/1107745993606303814/1148861404087070740/Cam_Real_estate_building_hero_image_9f7db155-79da-4270-a320-535fae32d82e.png');
+    background-size: cover;
+    background-position: center;
+    opacity: .9;
+    z-index: -1;
+    height: 500px;
+}
+
+.hero-image {
+   z-index: -1;
+}
+
+.container {
+    z-index: 1;
+    border: 1px solid red;
+}
+
+.header h1 {
+    color: white;
+}
+
+.header p {
+    color: white;
+}
+
+.hero-text {
+    display: grid;
+    border: 1px solid red;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.grid-item {
+  border: 1px solid black;
+  grid-column-start: 2;
+  grid-column-end: 6;
+}
+
+.grid-item h1 {
+    font-size: 72px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.grid-item p {
+    font-size: 20px;
+    line-height: 1.2;
+    padding-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 40px;
+    background-color: black; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
 }

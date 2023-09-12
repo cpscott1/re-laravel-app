@@ -16,7 +16,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: grey;
+    background: #fff;
+    border-radius: 25px;
 }
 
 .menu-link {
@@ -41,3 +42,4 @@
     text-decoration: none;
     color: black;
 }
+
