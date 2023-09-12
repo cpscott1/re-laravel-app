@@ -1,0 +1,139 @@
+.listings-page {
+
+}
+
+.listings-city {
+    position: relative;
+    background-color: black;
+}
+
+.listings-city img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    opacity: .8;
+}
+
+.listing-city-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.listings-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listings-filter-container {
+    display: flex;
+    background: white;
+    padding: 20px;
+    position: relative;
+    transform: translate(0, -50%);
+    border-radius: 5px;
+}
+
+.filter-option, .filter-button {
+    padding: 0 15px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid rgb(245,246ß, 247);
+    margin-right: .5rem;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    font-weight: 600;
+}
+
+.filter-option:hover, .filter-button:hover {
+    background: rgb(245,246, 247);
+}
+
+.filter-button {
+    margin-right: 0;
+    border: 1px solid rgb(219,105,29);
+}
+
+.filter-button:hover {
+    background: rgb(219,105,29);
+    color: white;
+}
+.fa-caret-down {
+    margin-left: 1rem;
+}
+
+.listings-properties-container {
+}
+
+.listings-properties-item {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(17,12,46,0.15) 0px 48px 100px 0px;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.listings-properties img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+
+.listings-properties-saved {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #1b1b1b;
+    background: white;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    transition: all 2s ease-in-out;
+    cursor: pointer;
+}
+
+.listings-properties-saved:hover, .listings-properties-saved--active {
+    background: red;
+    color: white;
+}
+
+.listing-properties-itemprice {
+    font-size: 2rem;
+    font-weight: 700;
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.listing-properties-itemdetails {
+    font-size: 1.1rem;
+    color: #7c8791;
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.listing-properties-itemaddress {
+    font-size: .9rem;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.listing-properties-itemline {
+    background:  #7c8791;
+    height: 1px;
+}
+
+.listing-properties-itemowner {
+    font-size: .9rem;
+}
