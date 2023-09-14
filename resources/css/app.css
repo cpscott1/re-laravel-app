@@ -5,3 +5,7 @@
 @import './layouts/main-layout.css';
 @import './components/header.css';
 @import './pages/listings.css';
+@import './layouts/account.css';
+@import './pages/show-status.css';
+@import './pages/auth.css';
+@import './pages/single-listing.css';
