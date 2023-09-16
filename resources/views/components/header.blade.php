@@ -11,8 +11,24 @@
             <a href="#" class="menu-link">Contact</a>
         </div>
         <div class="sign-up">
-            <i class="fa-regular fa-user signup-icon"></i>
-            <a href="#" class="signup-link">Signup</a>
+           
+            @if (Route::has('login'))
+                    @auth
+                    <i class="fa-regular fa-user signup-icon"></i>
+                    <a href="#" class="signup-link">Signup</a>
+                    <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                            <a href="{{ route('logout')}}" onclick="event.preventDefault();this.closest('form').submit();">Logout</a>
+                        </form>
+                        <a href="{{ url('/dashboard') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dashboard</a>
+                    @else
+                        <a href="{{ route('login') }}">Login</a>
+
+                        @if (Route::has('register'))
+                        <a href="{{ route('register') }}">Register</a>
+                        @endif
+                    @endauth
+            @endif
         </div>
        </div> 
        <div class="hero-text">
